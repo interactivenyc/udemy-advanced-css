@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /* better to do this for 3rd party css libs - inherit from body OR lib */
+}
+
+html {
+  /* this defines what 1rem is */
+  /* default size is 16px this converts to 10px for universal scaling */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
