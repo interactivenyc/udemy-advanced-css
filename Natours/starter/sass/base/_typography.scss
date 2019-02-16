@@ -1,7 +1,7 @@
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: $font-size-default;
   line-height: 1.7;
   color: $color-grey-dark;
   padding: 3rem;
@@ -33,5 +33,38 @@ body {
     letter-spacing: 1.7rem;
 
     animation: moveInRight 1s ease-out;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  transition: all 0.2s;
+
+  // Effect for colorizing text with background image
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  &:hover {
+    transform: scale(1.2);
+    text-shadow: 0.25rem 0.25rem 1rem rgba(white, 0.7);
+  }
+}
+
+.heading-tertiary {
+  font-size: $font-size-default;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $font-size-default;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }
